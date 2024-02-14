@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import Nav from "./Nav";
+import CustomHead from "./Head";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Portfolio",
@@ -9,9 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <>
+    <CustomHead></CustomHead>
     <Nav></Nav>
     {children}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </>
   );
 }
