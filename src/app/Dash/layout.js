@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <>
     {/* <CustomHead></CustomHead> */}
-    <BootstrapClient></BootstrapClient>
+   
     <Nav></Nav>
     {children}
     </>
