@@ -24,7 +24,7 @@ export default function Exp({fw}) {
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-12 mb-3">
-                        <div className="w-100 card text-center z" >
+                        <div className="w-100 card text-center " >
                             <div className="card-body">
                                 <h5 className="card-title">Website Design</h5>
                                 <p className="card-text">Empower your web presence with our frontend development expertise, harnessing the capabilities of React.js for stunning user interfaces. Rely on our backend development prowess to build robust APIs with Node.js and Express.js, ensuring seamless data management and integration.</p>
