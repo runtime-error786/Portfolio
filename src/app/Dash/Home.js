@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Img from "./Img";
 
-export default function Home() {
+export default function Home({fw}) {
     return (
-        <div className="container-fluid d-flex justify-content-center align-items-center" style={{ minHeight: "100vh" }}>
+        <div ref={fw} className="container-fluid d-flex justify-content-center align-items-center" style={{ minHeight: "130vh" }}>
             <div className="row m-sm-5 p-sm-5">
                 <div className="col-lg-7  text-center mt-lg-5 mt-md-2 pt-lg-1 mb-md-5 mt-5">
                     <h4 className="as1">Hello, It&apos;s Me</h4>
