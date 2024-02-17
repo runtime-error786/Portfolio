@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRef } from "react";
 
-export default function Nav({ scrollToSection,homeRef,aboutRef,skillsRef,expRef }) {
+export default function Nav({ scrollToSection,homeRef,aboutRef,skillsRef,expRef,projRef }) {
  
   return (
     <nav className="navbar navbar-expand-lg navbar-dark i3 fixed-top">
@@ -48,7 +48,7 @@ export default function Nav({ scrollToSection,homeRef,aboutRef,skillsRef,expRef 
               </button>
             </li>
             <li className="nav-item">
-              <button className="nav-link" onClick={() => scrollToSection(projectsRef)}>
+              <button className="nav-link" onClick={() => scrollToSection(projRef)}>
                 Projects
               </button>
             </li>

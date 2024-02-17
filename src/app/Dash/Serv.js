@@ -25,7 +25,7 @@ export default function Exp({fw}) {
                         <div className="card text-center ms-md-5" >
                             <div className="card-body">
                                 <h5 className={`card-title ${Kani1.className}`}>Website Design</h5>
-                                <p className="card-text">Empower your web presence with our frontend development expertise, harnessing the capabilities of React.js for stunning user interfaces. Rely on our backend development prowess to build robust APIs with Node.js and Express.js, ensuring seamless data management and integration.</p>
+                                <p className="card-text">Empower your web presence with our frontend development expertise, harnessing the capabilities of React.js for stunning user interfaces. Rely on our backend development prowess to build robust APIs with Node.js and Express.js, ensuring seamless data management</p>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ export default function Exp({fw}) {
                         <div className="card text-center  ms-md-5">
                             <div className="card-body">
                                 <h5 className={`card-title ${Kani1.className}`}>Windows Form(GUI)</h5>
-                                <p className="card-text">I offer expert Graphical User Interface (GUI) services, crafting intuitive designs that elevate user experience and streamline interaction with software applications. From wireframing to final implementation, I ensure seamless navigation and visually appealing interfaces across desktop platforms.</p>
+                                <p className="card-text">I offer expert Graphical User Interface (GUI) services, crafting intuitive designs that elevate user experience and streamline interaction with software applications. From wireframing to final implementation, I ensure seamless navigation and visually appealing interfaces.</p>
                             </div>
                         </div>
                     </div>
