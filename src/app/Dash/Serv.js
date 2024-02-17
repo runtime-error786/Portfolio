@@ -15,7 +15,7 @@ export default function Exp({fw}) {
                 </div>
                 <div className='row  align-items-center mt-5 ps-5'>
                     <div className=" col-lg-4 col-md-6 col-sm-12 mb-3">
-                        <div className=" w-100  card text-center ">
+                        <div className=" w-50  card text-center ">
                             <div className="card-body">
                                 <h5 className="card-title">UI/UX Design</h5>
                                 <p className="card-text">Elevate your digital presence with our expertly crafted UI designs, tailored to captivate your audience and drive engagement.
@@ -24,7 +24,7 @@ export default function Exp({fw}) {
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-12 mb-3">
-                        <div className="w-100 card text-center " >
+                        <div className="w-75 card text-center " >
                             <div className="card-body">
                                 <h5 className="card-title">Website Design</h5>
                                 <p className="card-text">Empower your web presence with our frontend development expertise, harnessing the capabilities of React.js for stunning user interfaces. Rely on our backend development prowess to build robust APIs with Node.js and Express.js, ensuring seamless data management and integration.</p>
