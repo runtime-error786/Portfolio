@@ -1,13 +1,12 @@
 import Link from "next/link";
 import { useRef } from "react";
 
-export default function Nav({ scrollToSection,homeRef,aboutRef }) {
+export default function Nav({ scrollToSection,homeRef,aboutRef,skillsRef,expRef }) {
  
   return (
     <nav className="navbar navbar-expand-lg navbar-dark i3 fixed-top">
       <div className="container-fluid">
         <Link href="/Dash" className="navbar-brand">
-         
             <span className="i1 i2">Dev</span>
             <span className="i1">Works</span>
           
@@ -44,8 +43,8 @@ export default function Nav({ scrollToSection,homeRef,aboutRef }) {
               </button>
             </li>
             <li className="nav-item">
-              <button className="nav-link" onClick={() => scrollToSection(experienceRef)}>
-                Experience
+              <button className="nav-link" onClick={() => scrollToSection(expRef)}>
+                Services
               </button>
             </li>
             <li className="nav-item">

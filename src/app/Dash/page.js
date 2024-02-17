@@ -7,10 +7,14 @@ import "../globals.css";
 import "./g.css";
 import 'bootstrap/dist/css/bootstrap.css'
 import BootstrapClient from "./Head";
+import Skill from "./Skill";
+import Exp from "./Serv";
 
 export default function Page() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
+  const expRef = useRef(null);
   // Add refs for other sections
 
   const scrollToSection = (ref) => {
@@ -22,9 +26,11 @@ export default function Page() {
   return (
     <>
         <BootstrapClient></BootstrapClient>
-      <Nav scrollToSection={scrollToSection} homeRef={homeRef} aboutRef={aboutRef}/>
+      <Nav scrollToSection={scrollToSection} homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} expRef={expRef}/>
       <Home fw={homeRef} />
       <About fw={aboutRef} />
+      <Skill fw={skillsRef}></Skill>
+      <Exp fw={expRef}></Exp>
     </>
   );
 }

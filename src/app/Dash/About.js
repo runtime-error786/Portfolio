@@ -19,7 +19,7 @@ export default function About({ fw }) {
     <div className="container pt-5" ref={fw}>
       <section className="row">
         <div className="col-lg-12 text-center pt-3">
-          <h1 className={`${Kani1.className} k1`}>About Me</h1>
+          <h1 className={`${Kani1.className} k1 pb-5 mb-5`}>About Me</h1>
          
         </div>
         <div className="col-lg-6 text-center">
