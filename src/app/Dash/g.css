@@ -253,3 +253,11 @@
 .z{
     color: #00a8ff;
 }
+
+@media (max-width: 320px) {
+    .card{
+        margin-left: 30px;
+    }
+  }
+
+  
