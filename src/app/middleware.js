@@ -1,11 +1,19 @@
-import { NextResponse } from 'next/server'
- 
+import { NextResponse } from 'next/server';
+
 // This function can be marked `async` if using `await` inside
 export function middleware(request) {
-  return NextResponse.redirect(new URL('/Dash', request.url))
+  // Check if the request path is the root URL
+  if (request.url === '/' || request.url==="") {
+    // Redirect to "/Dash" only if the requested path is "/"
+    return NextResponse.redirect('/Dash');
+  }
+
+  // For all other paths, return the original request
+  return NextResponse.next();
 }
- 
-// See "Matching Paths" below to learn more
+
+// Define the configuration for the middleware
 export const config = {
-  matcher: '/',
-}
+  // Specify the path pattern to match
+  matcher: '*',
+};
