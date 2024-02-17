@@ -1,11 +1,10 @@
+import Image from "next/image";
+import Pic from "../../../public/pic.jpg";
 
-import Image from "next/image"
-import Pic from "../../../public/pic.jpg"
-export default function Img()
-{
-    return(
+export default function Img() {
+    return (
         <>
-            <Image src={Pic} className="w-75 h-75 rounded-5 g1 "></Image>
+            <Image src={Pic} className={"rounded-5 " + (window.innerWidth > 425 ? 'w-75' : 'w-100')} alt="Profile picture" />
         </>
     )
 }
