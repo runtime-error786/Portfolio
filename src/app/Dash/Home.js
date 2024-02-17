@@ -1,13 +1,17 @@
 import Image from "next/image";
+import { Kanit } from 'next/font/google'
 import Img from "./Img";
-
+const Kani = Kanit({
+  weight: '400',
+  subsets: ['latin'],
+})
 export default function Home({fw}) {
     return (
-        <div ref={fw} className="container-fluid d-flex justify-content-center align-items-center" style={{ minHeight: "130vh" }}>
+        <div ref={fw} className="container-fluid d-flex justify-content-center align-items-center">
             <div className="row m-sm-5 p-sm-5">
-                <div className="col-lg-7  text-center mt-lg-5 mt-md-2 pt-lg-1 mb-md-5 mt-5">
-                    <h4 className="as1">Hello, It&apos;s Me</h4>
-                    <h1 className="as2">Mustafa Rizwan</h1>
+                <div className="col-lg-7  text-center mt-lg-5 mt-md-2 pt-lg-1 mb-md-5 mt-5 pt-5">
+                    <h4 className="as1 mt-lg-5">Hello, It&apos;s Me</h4>
+                    <h1 className={`as2 ${Kani.className}`}>Mustafa Rizwan</h1>
                     <h4 >And I am <span className="as3">Full Stack Developer</span></h4>
                     <p>with extensive experience for over one year. My expertise lies in creating frontend and backend apps.</p>
                     <div className="d-flex justify-content-center mb-2"> {/* Centering the button */}
@@ -20,7 +24,7 @@ export default function Home({fw}) {
                         </a>
                     </div>
                 </div>
-                <div className="col-lg-5  text-center">
+                <div className="col-lg-5 d-flex justify-content-center align-items-center text-center">
                     <Img />
                 </div>
             </div>

@@ -59,6 +59,12 @@
     color: #00a8ff;
  }
 
+ .as4{
+    color: #00a8ff;
+    font-weight: bolder;
+    font-style: oblique;
+ }
+
  .btn1 {
     border: none;
     width: 15em;
@@ -102,3 +108,7 @@
     fill: white;
     transform: scale(1.2);
   } 
+
+  .k1{
+    font-size: 50px;
+  }
