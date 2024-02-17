@@ -1,8 +1,10 @@
+import s from "./g.module.css";
+import Home from "./Home";
 export default function Nav()
 {
     return(
         <>
-          <h1>  Hello Its Home</h1>
+          <Home></Home>
         </>
     )
 }

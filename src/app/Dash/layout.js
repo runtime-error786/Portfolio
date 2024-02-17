@@ -3,11 +3,9 @@ import Nav from "./Nav";
 import CustomHead from "./Head";
 import 'bootstrap/dist/css/bootstrap.css'
 import BootstrapClient from "./Head";
+import "../globals.css";
+import "./g.css";
 const inter = Inter({ subsets: ["latin"] });
-export const metadata = {
-  title: "Portfolio",
-  description: "Mustafa's Profile",
-};
 
 export default function RootLayout({ children }) {
   return (
