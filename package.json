@@ -18,6 +18,7 @@
     "@mui/material": "^5.15.10",
     "@mui/styled-engine-sc": "^6.0.0-alpha.16",
     "bootstrap": "^5.3.2",
+    "ci": "^2.3.0",
     "init": "^0.1.2",
     "next": "14.1.0",
     "react": "^18",
