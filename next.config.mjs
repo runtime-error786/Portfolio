@@ -1,7 +1,14 @@
-/** @type {import('next').NextConfig} */
+// next.config.js
+
 const nextConfig = {
-    output:"export",
-    images: { unoptimized: true }
+    images: { unoptimized: true },
+    exportPathMap: function () {
+        return {
+            '/': { page: '/' },
+            '/Dash':{page: '/Dash'},
+            // Add other pages if necessary
+        };
+    },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
