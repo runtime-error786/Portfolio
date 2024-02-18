@@ -29,8 +29,19 @@ export default function MultilineTextFields({fw}) {
     };
 
     const handleSubmit = () => {
-        // Your send message logic here
-        // After sending message, clear the form fields
+        // Check if any field is empty
+        for (const key in formData) {
+            if (formData[key] === '') {
+                toast.error(`Please fill out all fields.`);
+                return; // Stop submission if any field is empty
+            }
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            toast.error(`Please enter a valid email address.`);
+            return;
+        }
         setFormData({
             name: '',
             email: '',
@@ -40,9 +51,9 @@ export default function MultilineTextFields({fw}) {
             githubId: '',
             message: ''
         });
-        toast(`${formData.name}'s message submitted successfully.`);
-
+        toast.success(`${formData.name}'s message submitted successfully.`);
     };
+
 
     return (
         <div ref={fw} className='container'>
