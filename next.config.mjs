@@ -1,16 +1,12 @@
-// next.config.js
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: { unoptimized: true },
-    // Use output: export configuration instead of next export command
-    output: "export",
-    exportPathMap: function () {
-        return {
-            '/': { page: '/' },
-            '/Dash': { page: '/Dash' },
-            // Add other pages if necessary
-        };
+    experimental: {
+        output: "export",
+        images: {
+            loader: 'imgix',
+            path: '',
+        },
     },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
