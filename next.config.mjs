@@ -2,8 +2,8 @@
 
 const nextConfig = {
     images: { unoptimized: true },
-    // Configure output to export
-    output: 'export',
+    // Use output: export configuration instead of next export command
+    output: "export",
     exportPathMap: function () {
         return {
             '/': { page: '/' },
