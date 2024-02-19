@@ -332,3 +332,35 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #192a56; 
   }
+
+  /* .jj1{
+    animation-name: homemove;
+    animation-duration: 3s;
+  }
+
+  @keyframes homemove {
+    0%{
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+
+  .jj1{
+    animation-name: homemove1;
+    animation-duration: 3s;
+  }
+
+  @keyframes homemove1 {
+    0%{
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  } */
+
+  

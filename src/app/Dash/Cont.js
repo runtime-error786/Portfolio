@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Anton } from 'next/font/google'
 import "./g.css";
+import { RevealWrapper } from  'next-reveal'
 
 const Kani1 = Anton({
     weight: '400',
@@ -56,6 +57,10 @@ export default function MultilineTextFields({fw}) {
 
 
     return (
+        <div style={{overflowX:"hidden"}}>
+
+        <RevealWrapper style={{ overflowX: 'hidden' }}  origin='left: ' delay={0} duration={1000} distance='50px' reset={true} viewOffset={{top:  0,  right:0,  bottom:  10,  left:15}}>
+
         <div ref={fw} className='container'>
             <div className='row'>
                 <div className='col'>
@@ -157,6 +162,8 @@ export default function MultilineTextFields({fw}) {
                 </div>
             </div>
             <ToastContainer />
+        </div>
+        </RevealWrapper>
         </div>
     );
 }

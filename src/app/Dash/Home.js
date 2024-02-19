@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Kanit } from 'next/font/google'
 import Img from "./Img";
+import { RevealWrapper } from  'next-reveal'
 const Kani = Kanit({
     weight: '400',
     subsets: ['latin'],
@@ -13,6 +14,11 @@ const Kani1 = Anton({
 })
 export default function Home({ fw }) {
     return (
+        <div style={{overflowX:"hidden"}}>
+
+       
+        <RevealWrapper  origin='left: ' delay={0} duration={1000} distance='50px' reset={true} viewOffset={{top:  0,  right:0,  bottom:  10,  left:15}}>
+
         <div ref={fw} className="container-fluid d-flex justify-content-center align-items-center">
             <div className="row m-sm-5 p-sm-5">
                 <div className="col-lg-7  text-center mt-lg-5 mt-md-2 pt-lg-1 mb-md-5 mt-5 pt-5">
@@ -65,6 +71,8 @@ export default function Home({ fw }) {
                     <Img />
                 </div>
             </div>
+        </div>
+        </RevealWrapper>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Anton } from 'next/font/google'
 import "./g.css";
+import { RevealWrapper } from  'next-reveal'
 
 const Kani1 = Anton({
     weight: '400',
@@ -8,6 +9,10 @@ const Kani1 = Anton({
 })
 export default function Exp({fw}) {
     return (
+        <div style={{overflowX:"hidden"}}>
+
+        <RevealWrapper style={{ overflowX: 'hidden' }}  origin='left: ' delay={0} duration={1000} distance='50px' reset={true} viewOffset={{top:  0,  right:0,  bottom:  10,  left:15}}>
+
         <div ref={fw} className="container-fluid d-flex justify-content-center align-items-center mt-5 pt-5">
             <div className="row ">
                 <h1 className={`text-center ${Kani1.className} k1 mt-2`}>Projects</h1>
@@ -79,6 +84,8 @@ export default function Exp({fw}) {
                     </div>
                 </div>
             </div>
+        </div>
+        </RevealWrapper>
         </div>
     );
 }

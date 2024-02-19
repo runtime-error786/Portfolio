@@ -1,12 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-       
-        images: {
-            loader: 'imgix',
-            path: '',
-        },
-    },
+    output:"export",
+    images: { unoptimized: true }
 };
 
 export default nextConfig;

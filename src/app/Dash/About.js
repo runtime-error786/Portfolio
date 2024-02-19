@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Kanit } from 'next/font/google'
 import Img from "./ImgAb";
+import { RevealWrapper } from  'next-reveal'
 
 const Kani = Kanit({
   weight: '400',
@@ -16,6 +17,10 @@ const Kani1 = Anton({
 
 export default function About({ fw }) {
   return (
+    <div style={{overflowX:"hidden"}}>
+
+    <RevealWrapper style={{ overflowX: 'hidden' }}  origin='left: ' delay={0} duration={1000} distance='50px' reset={true} viewOffset={{top:  0,  right:0,  bottom:  10,  left:15}}>
+
     <div className="container pt-5" ref={fw}>
       <section className="row">
         <div className="col-lg-12 text-center pt-3">
@@ -32,6 +37,8 @@ export default function About({ fw }) {
           </div>
         </div>
       </section>
+    </div>
+    </RevealWrapper>
     </div>
   );
 }

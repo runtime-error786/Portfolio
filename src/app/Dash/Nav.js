@@ -4,6 +4,7 @@ import { useRef } from "react";
 export default function Nav({ scrollToSection,homeRef,aboutRef,skillsRef,expRef,projRef,contRef }) {
  
   return (
+    
     <nav className="navbar navbar-expand-lg navbar-dark i3 fixed-top">
       <div className="container-fluid">
         <Link href="/Dash" className="navbar-brand">
