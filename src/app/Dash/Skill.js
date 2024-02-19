@@ -11,7 +11,7 @@ export default function Skill({ fw }) {
     <>
             <div style={{overflowX:"hidden"}}>
 
-        <RevealWrapper style={{ overflowX: 'hidden' }}  origin='left: ' delay={0} duration={1000} distance='50px' reset={true} >
+        <RevealWrapper style={{ overflowX: 'hidden' }}  origin='left' delay={0} duration={1000} distance='50px' reset={true} >
 
       <div className="container-fluid  mb-2 pb-5 pt-5" ref={fw}>
         <div className="row ">

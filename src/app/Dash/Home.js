@@ -17,7 +17,7 @@ export default function Home({ fw }) {
         <div style={{overflowX:"hidden"}}>
 
        
-        <RevealWrapper  origin='left: ' delay={0} duration={1000} distance='50px' reset={true} >
+        <RevealWrapper  origin='left' delay={0} duration={1000} distance='50px' reset={true} >
 
         <div ref={fw} className="container-fluid d-flex justify-content-center align-items-center">
             <div className="row m-sm-5 p-sm-5">
