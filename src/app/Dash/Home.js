@@ -2,11 +2,11 @@ import Image from "next/image";
 import { Kanit } from 'next/font/google'
 import Img from "./Img";
 import { RevealWrapper } from  'next-reveal'
+import { Anton} from 'next/font/google'
 const Kani = Kanit({
     weight: '400',
     subsets: ['latin'],
 })
-import { Anton} from 'next/font/google'
 
 const Kani1 = Anton({
   weight: '400',

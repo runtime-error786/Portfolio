@@ -8,9 +8,9 @@ import "./g.css";
 import 'bootstrap/dist/css/bootstrap.css'
 import BootstrapClient from "./Head";
 import Skill from "./Skill";
-import Exp from "./Serv";
-import Exp1 from "./Proj";
-import MultilineTextFields from "./Cont";
+import Services from "./Services";
+import Projects from "./Projects";
+import MultilineTextFields from "./Contact";
 import FOOT from "./Foot";
 
 export default function Page() {
@@ -36,8 +36,8 @@ export default function Page() {
       <Home fw={homeRef} />
       <About fw={aboutRef} />
       <Skill fw={skillsRef}></Skill>
-      <Exp fw={expRef}></Exp>
-      <Exp1 fw={projRef}></Exp1>
+      <Services fw={expRef}></Services>
+      <Projects fw={projRef}></Projects>
       <MultilineTextFields fw={contRef}></MultilineTextFields>
       <FOOT></FOOT>
     </>
